@@ -1,11 +1,9 @@
-# For more Python information and examples, see
-# https://docs.semaphoreci.com/article/83-language-python
 version: v1.0
 name: Pytest tests
 agent:
   machine:
     type: e1-standard-2
-    os_image: ubuntu1604
+    os_image: ubuntu1804
 blocks:
   - name: Python example
     task:
@@ -13,6 +11,3 @@ blocks:
         - name: Pytest
           commands:
             - pytest -v
-            # Uncomment the following line to pull your code,
-            # then proceed by adding your custom commands:
-            #- checkout
