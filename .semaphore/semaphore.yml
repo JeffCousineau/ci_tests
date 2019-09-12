@@ -10,5 +10,7 @@ blocks:
       jobs:
         - name: Pytest
           commands:
-            - pip install pytest
             - pytest -v
+      prologue:
+        commands:
+          - sudo apt install pytest
