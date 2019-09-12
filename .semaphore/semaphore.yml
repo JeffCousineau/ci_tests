@@ -10,4 +10,5 @@ blocks:
       jobs:
         - name: Pytest
           commands:
+            - pip install pytest
             - pytest -v
