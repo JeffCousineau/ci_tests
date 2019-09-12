@@ -13,4 +13,4 @@ blocks:
             - pytest -v
       prologue:
         commands:
-          - pip install -U pytest
+          - sudo pip install -U pytest
